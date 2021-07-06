@@ -11,7 +11,7 @@ const unauthorized = require('./routes/unauthorized');
 const db = require('./config/keys').mongoURI;
 mongoose
   .connect(db,{ useNewUrlParser: true, useCreateIndex: true,useUnifiedTopology: true })
-  .then(()=>console.log('MongoDB Connected'))
+  .then(()=>console.log('MongoDB Connec ted'))
   .catch(err=> console.log(err));
 const port = process.env.PORT||3000;
 const store = new mongoDbStore({
